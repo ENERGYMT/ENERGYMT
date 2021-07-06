@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # See action.yml for all options
-      - uses: actions/cache@v2
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
