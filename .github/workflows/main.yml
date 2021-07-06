@@ -17,7 +17,7 @@ jobs:
           template: classic
           base: header, metadata
           config_timezone: Europe/Berlin
-          plugin_languages_ignored: html, css 
+          plugin_languages_ignored: html, css, hsls, shaderlab 
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
