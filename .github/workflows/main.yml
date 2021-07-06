@@ -11,13 +11,14 @@ jobs:
     steps:
       # See action.yml for all options
       - uses: lowlighter/metrics@latest
+      - uses: actions/cache@v2
         with:
           # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
           base: header, metadata
           config_timezone: Europe/Berlin
-          plugin_languages_ignored: html, css, hsls, shaderlab 
+          plugin_languages_ignored: html, css, hlsl, shaderlab 
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
